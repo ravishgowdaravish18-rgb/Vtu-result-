@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Are Failed Card - Max Emojis</title>
+    <style>
+        @import url('https://googleapis.com');
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .card {
+            background-color: #f4f4f4;
+            width: 500px; /* Slightly wider to give massive emojis side-by-side room */
+            height: 600px; /* Slightly taller to prevent layout breaking */
+            padding: 25px 15px 10px 15px; /* Minimal bottom padding to drop elements as low as possible */
+            box-sizing: border-box;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .text-container {
+            color: #1a304e;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .line-1 {
+            font-size: 56px;
+            line-height: 1.05;
+            font-weight: 700;
+        }
+
+        .line-2 {
+            font-size: 64px;
+            line-height: 1.05;
+            font-weight: 700;
+        }
+
+        .line-3 {
+            font-size: 38px;
+            line-height: 1.05;
+            font-weight: 700;
+        }
+
+        .graphic-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end; /* Pushes the massive graphics to rest firmly on the baseline */
+            gap: 1px;
+            width: 10%;
+            margin-top: auto;
+        }
+
+        .emoji-img {
+            /* Pushed to absolute maximum capacity for side-by-side positioning inside the container */
+            width: 200px; 
+            height: 200px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <div class="text-container">
+            <div class="line-1">You Are</div>
+            <div class="line-2">Failed</div>
+            <div class="line-3">In All Subjects</div>
+        </div>
+        
+        <div class="graphic-container">
+            <!-- Pointing Hand Emoji -->
+            <img class="emoji-img" src="" alt="👉">
+            <!-- Laughing Crying Emoji -->
+            <img class="emoji-img" src="" alt="😂">
+        </div>
+    </div>
+
+</body>
+</html>
